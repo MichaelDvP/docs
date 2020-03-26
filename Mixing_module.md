@@ -8,11 +8,11 @@ Mixing modules are used for different tasks.
 - Device address 0x21, fixed to hc2
 - EMS protocol
 ### Type 0xAC:
-- command from thermostat sets temperature setpoint (index 00) and Pump (index 01)
+- command from thermostat; sets temperature setpoint (index 00) and pump modulation (index 01)
 - ``Thermostat -> Mixing Module, MM10ParameterMessage(0xAC), telegram: 10 21 AC 00 2A 64 01``
-- setpoint 42°C (2A), Pump 100% (64)
+- setpoint 42°C (2A), pump 100% (64)
 ### Type 0xAB  
-- status-message from mixing module, publishes setpoint(00), temperatur(01) and pump(03) 
+- status-message from mixing module; publishes setpoint(00), temperatur(01) and pump(03) 
 - `Mixing Module -> All, MMStatusMessage(0xAB), telegram: 21 00 AB 00 2A 01 A3 64 02 01 00`
 - setpoint 42°C (2A), temperature 41.9°C (01A3), pump 100% (64) 
 
@@ -21,6 +21,6 @@ Mixing modules are used for different tasks.
 - addresses 0x20 .. 0x23 sets mixing to hc1 .. hc4, 0x28, 0x29 sets water buffer function
 - EMS+ protocol
 ### Type 0x01D7, 0x01D8, 0x01D9, 0x01DA:
-- status-message per hc from mixing module, publishes valve status (02), temperatur(03) and pump(05) 
+- status-message per hc from mixing module; publishes valve status (02), temperatur(03) and pump(05) 
 ### Type 0x0231, 0x0232
-- warm water buffer status, publishes flow temperature (00), pump (02) and temperature status (0B)
+- warm water buffer status; publishes flow temperature (00), pump (02) and temperature status (0B)
