@@ -1,7 +1,7 @@
 ## General:
 Mixing modules are used for different tasks.
 - Main task is to keep the boiler hot and mix cold water from backflow to flow to achieve a constant flowtemp.
-- Mixing module MM10 can be used to add a hybrid-switching-module to hc2 if HM10 is installed on hc1.
+- Mixing module MM10 can also be used to add a hybrid-switching-module to hc2 if HM10 is installed on hc1.
 - MM100, 200 and 400 can also be used to charge hot water buffers.
 
 ## MM10:
@@ -20,6 +20,7 @@ Mixing modules are used for different tasks.
 - Device address selectable by rotary switch 1-0x20 ... 9-0x29
 - addresses 0x20 .. 0x23 sets mixing to hc1 .. hc4, 0x28, 0x29 sets water buffer function
 - EMS+ protocol
+- MM200 is two MM100 in one case, MM400 four modules in one case
 ### Type 0x01D7, 0x01D8, 0x01D9, 0x01DA:
 - status-message per hc from mixing module; publishes valve status (02), temperatur(03) and pump(05) 
 ### Type 0x0231, 0x0232
