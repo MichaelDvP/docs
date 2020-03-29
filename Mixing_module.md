@@ -16,6 +16,9 @@ Mixing modules are used for different tasks.
 - `Mixing Module -> All, MMStatusMessage(0xAB), telegram: 21 00 AB 00 2A 01 A3 64 02 01 00`
 - setpoint 42°C (2A), temperature 41.9°C (01A3), pump 100% (64) 
 
+## MM50
+- Same protokoll as MM100 but fixed to address 0x21 (hc2) and Type 0x1D08
+
 ## MM100, MM200, MM400
 - Device address selectable by rotary switch 1-0x20 ... 9-0x29
 - addresses 0x20 .. 0x23 sets mixing to hc1 .. hc4, 0x28, 0x29 sets water buffer function
